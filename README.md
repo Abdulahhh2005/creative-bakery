@@ -3,7 +3,9 @@
 A one-page bakery landing site: hero, product showcase, about section with stats, blog preview
 and a contact block. Plain HTML and SCSS, BEM naming, no framework.
 
-**Live demo:** pending — not deployed yet.
+**Live demo:** https://abdulahhh2005.github.io/creative-bakery/
+
+![Creative Bakery home page](./screenshot.png)
 
 ## What it does
 
