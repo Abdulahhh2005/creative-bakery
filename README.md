@@ -1,30 +1,41 @@
-# Creative Bakery landing page
+# Creative Bakery
 
-Implement landing page according to [Figma design](https://www.figma.com/file/dY3izAm0Vspsmra4lQWQIP/Bakerlab-FE-students?node-id=0%3A1) - Use BEM and SCSS
+A one-page bakery landing site: hero, product showcase, about section with stats, blog preview
+and a contact block. Plain HTML and SCSS, BEM naming, no framework.
 
-- The design 1440px
-- Desktop 1280px
-- Tablet 640px
-- Mobile (> 320px)
+**Live demo:** pending — not deployed yet.
 
+## What it does
 
-## Github flow
-1. **Fork** the repo.
-2. **Clone** the forked one. (The project link should have your name but not `mate-academy`)
-3. Run `npm install` (or just `npm i`).
-4. Run `npm start`.
-5. Open one more terminal window for the next steps.
-6. `git checkout -b develop` - to create new branch and switch on it.
-7. Write you code in `src` folder.
-8. Run `npm run lint` and fix code style errors.
-9. Run `npm run deploy` to deploy your solution to `gh-pages`.
-10. `git add . && git commit -m 'solution'` to save your changes.
-11. `git push origin develop` - to send you code for PR.
-12. Create a Pull Request (PR) from your branch `develop` to branch `master` of original repo.
-13. Replace `<your_account>` with your Github username in the
-  [DEMO LINK](https://Abdulahhh2005.github.io/layout_creativeBakery/).
-14. Copy `DEMO LINK` to the PR description.
+- **Hero** with a call to action
+- **What We Bake** — a grid of featured products
+- **About Us** — company blurb with stat counters
+- **Blog** preview section
+- **Contact** block with social links
+- **Theme switcher** — toggles an alternate colour palette across the page
+- Smooth in-page scrolling, responsive down to mobile with no horizontal scroll
 
-> To update you PR repeat steps 7-11.
+## Stack
 
-15. Check yourself using the [CHECKLIST](https://github.com/mate-academy/layout_creativeBakery/blob/master/checklist.md) when finished;
+HTML5 · SCSS (BEM naming, enforced by `.bemlintrc.json`) · vanilla JavaScript. No framework, no
+client-side build tooling beyond `mate-scripts` for linting and deploy.
+
+## Running it locally
+
+```bash
+git clone <repository-url>
+cd creative-bakery
+npm install
+npm start
+```
+
+Other commands:
+
+```bash
+npm run lint    # style-format + format + mate-scripts lint — WRITES files
+```
+
+## How it is put together
+
+Static markup in `src/index.html`, styles split into BEM blocks under `src/styles`, and a small
+`src/scripts/main.js` handling the theme toggle. No client-side routing or state beyond that.
